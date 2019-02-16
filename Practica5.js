@@ -6,22 +6,22 @@ function setup() {
 }
 
 function draw() {
-	mostrar();
+  mostrar();
   mover();
   funciones();
 }
 
 function mostrar(){
-	background(220);
+  background(220);
   ellipse(x,200,100,100);
 }
 
 function mover(){
-	x=x+vel;
+  x=x+vel;
 }
 
 function funciones(){
-	if(x>350 || x<50){
+  if(x>350 || x<50){
   	vel=vel*-1;
   }
 }
